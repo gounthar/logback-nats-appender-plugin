@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-    Plugin providing a LOGBack appender to NATS topic
+    Provides a LOGBack JAR library to send logs to NATS topic
 </div>

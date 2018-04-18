@@ -35,6 +35,14 @@
             <url>https://repo.jenkins-ci.org/public/</url>
         </repository>
     </repositories>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.gerritforge/logback-nats-appender -->
+        <dependency>
+            <groupId>com.gerritforge</groupId>
+            <artifactId>logback-nats-appender</artifactId>
+            <version>0.2.2</version>
+        </dependency>
+    </dependencies>
     <pluginRepositories>
         <pluginRepository>
             <id>repo.jenkins-ci.org</id>
