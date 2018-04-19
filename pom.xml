@@ -23,7 +23,7 @@
             <url>https://www.apache.org/licenses/LICENSE-2.0</url>
         </license>
     </licenses>
-    <url>https://wiki.jenkins.io/display/JENKINS/LOGBack+NATS+Appender+Plugin</url>
+    <url>https://wiki.jenkins.io/display/JENKINS/LOGBack+appender+for+NATS+topic+Plugin</url>
     <scm>
         <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
@@ -35,6 +35,13 @@
             <url>https://repo.jenkins-ci.org/public/</url>
         </repository>
     </repositories>
+    <developers>
+        <developer>
+            <id>lucamilanesio</id>
+            <name>Luca Milanesio</name>
+            <email>luca.milanesio@gmail.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>com.gerritforge</groupId>
