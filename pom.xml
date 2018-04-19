@@ -9,14 +9,14 @@
     </parent>
     <groupId>io.jenkins.plugins</groupId>
     <artifactId>logback-nats-appender</artifactId>
-    <version>0.2.2-SNAPSHOT</version>
+    <version>0.2.2</version>
     <packaging>hpi</packaging>
     <properties>
         <jenkins.version>2.60.1</jenkins.version>
         <java.level>8</java.level>
     </properties>
-    <name>LOGBack appender to NATS topic</name>
-    <description>Plugin providing a LOGBack appender to NATS topic</description>
+    <name>LOGBack appender to NATS pub/sub topic</name>
+    <description>Plugin providing a LOGBack appender to NATS pub/sub topic</description>
     <licenses>
         <license>
             <name>Apache 2.0</name>
@@ -36,11 +36,15 @@
         </repository>
     </repositories>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.gerritforge/logback-nats-appender -->
         <dependency>
             <groupId>com.gerritforge</groupId>
             <artifactId>logback-nats-appender</artifactId>
-            <version>0.2.2</version>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
         </dependency>
     </dependencies>
     <pluginRepositories>
